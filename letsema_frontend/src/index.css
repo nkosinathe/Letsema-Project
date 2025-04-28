@@ -1,0 +1,76 @@
+/* src/index.css or src/global.css */
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply global font and colors */
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background-color: #0e0e0e; /* Dark background */
+  color: #f0f0f0; /* Light text */
+  min-height: 100vh;
+}
+
+/* Styling for all buttons */
+button {
+  background-color: #1f6feb;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388eff;
+}
+
+/* Inputs and Textareas */
+input, select, textarea {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #999;
+}
+
+/* Links */
+a {
+  color: #4ea8de;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Scrollbar styling (optional, looks nice) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

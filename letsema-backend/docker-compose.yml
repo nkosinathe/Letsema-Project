@@ -1,0 +1,28 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: letsema
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: LMB@1989
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DEBUG=False
+      - SECRET_KEY=supersecretkey
+      - ALLOWED_HOSTS=*
+
+volumes:
+  postgres_data:

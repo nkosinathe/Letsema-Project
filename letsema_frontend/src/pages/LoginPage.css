@@ -1,0 +1,126 @@
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000; /* Black background */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.login-box {
+  background-color: #1a1a1a; /* Dark background for the login box */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo-section {
+  margin-bottom: 30px;
+}
+
+.app-name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.app-tagline {
+  color: #bbb;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.login-header {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.form-input:focus {
+  border-color: #3498db;
+  background-color: #444;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #2980b9;
+}
+
+.signup-section {
+  margin-top: 20px;
+}
+
+.signup-text {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #444;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+  background-color: #555;
+}
+
+
+
+
